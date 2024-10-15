@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: futur;
+    src: url(font/unicode.futurabb.ttf);
+}
+
+@font-face {
+    font-family: impact;
+    src: url(font/unicode.impact.ttf);
+}
+
+@font-face {
+    font-family: drip;
+    src: url(font/adrip1.ttf);
+}
+
+@font-face {
+    font-family: attack;
+    src: url(font/aAttackGraffiti.ttf);
+}
+
+@font-face {
+    font-family: spray;
+    src: url(font/Spray\ Letters.otf);
+}
+
+@font-face {
+    font-family: street;
+    src: url(font/street\ soul.ttf);
+}
+
+@font-face {
+    font-family: retro;
+    src: url(font/RetroVintage-Regular.otf);
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Colocar os elementos no espaço disponível */
+    align-items: center; /* Centralizar verticalmente os elementos no header */
+    position: relative;
+}
+
+.logo {
+    width: 10vw;
+    margin: 10px;
+    z-index: 2;
+}
+
+.drt {
+    display: flex;
+    align-items: center; /* Centralizar verticalmente os elementos */
+    justify-content: flex-end; /* Alinhar à direita */
+    margin-right: 10px; /* Ajustar a margem direita */
+}
+
+
+.btn {
+    width: 50px;
+    height: 50px;
+    background-color: #00000062;
+    border: none;
+    border-radius: 50%;
+    margin: 20px;
+    z-index: 2;
+}
+
+.btn img {
+    width: 35px;
+}
+
+.btn2 {
+    width: 100px;
+    height: 40px;
+    background-color: #00000062;
+    border: none;
+    border-radius: 30px;
+    margin: 20px;
+    margin-right: 40px;
+    z-index: 2;
+}
+
+.galeria {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    height: 78.7vh;
+}
+
+.galeria img {
+    aspect-ratio: 9/16;
+    min-width: 0;
+    flex: 1 1 10px;
+    object-fit: cover;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.galeria img:hover {
+    flex: 1 1 100px;
+    opacity: 1;
+}
+main{
+    margin-top: 56.7vh;
+}
+
+.sidebar{
+    display: flex;
+    position: absolute;
+    background-color: #211522;
+    justify-content: left;
+    width: 13vw;
+    height: 209.6vh;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.playlist{
+    width: 80px;
+    text-align: center;
+    padding-top: 29%;
+    padding-bottom: 29%;
+    overflow: hidden;
+}
+
+.playlist h3{
+    margin-top: 10px;
+    color: white;
+    font-family: retro;
+}
+
+.qdrp{
+    height: 80px;
+    width: 80px;
+    border-radius: 13px;
+    background-color: #C197D2;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.qdrp h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.playlist:hover{
+    cursor: pointer;
+}
+
+.qdrp img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 13px;
+}
+
+.meio {
+    background-color: #613659;
+    margin-left: 13vw;
+    justify-content: flex-end;
+    color: #f0f8ff;
+    overflow: hidden;
+}
+
+
+.meio h1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    font-family: drip;
+}
+.meio h2{
+    display: flex;
+    margin-top: 0px;
+    justify-content: center;
+    font-size: 60px;
+    color: #C197D2;
+    font-family: drip;
+}
+
+.planos{
+    display: flex;
+}
+
+.pln{
+    background-color: #C197D2;
+    height: 70vh;
+    width: 26vw;
+    margin: 3vw;
+    border-radius: 12px;
+    text-align: center;
+    transition: scale 350ms ease, opacity 350ms linear ;
+}
+
+.pln:hover{
+    scale: .9;
+    cursor: pointer;
+}
+
+.pln h4{
+    font-family: attack;
+}
+
+.pln h5{
+    text-align: center;
+    color: #211522;
+    font-size: 28px;
+    font-family: spray;
+}
+
+.pln p{
+    margin-top: 10px;   
+    font-size: 24px;
+    color: #211522;
+    font-family: street;
+}
+
+.qrd{
+    display: flex;
+    background-color: #D3B1C2;
+    padding: 15px;
+    width: 18vw;
+    height: 29vh;
+    margin: 15px;
+    border-radius: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.qrd h4{
+    color: #613659;
+    width: 115px;
+    font-size: 40px;
+    align-self: center;
+    justify-content: center;
+}
+
+.bolas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 50px;
+  margin-bottom: 10vh;
+}
+
+.bola {
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  width: 40vh;
+  height: 40vh;
+  border-radius: 50%;
+  background-color: #211522;
+  margin: 0 4.7vw; 
+}
+
+.img1, .img2, .img3 {
+  width: 70%;
+  }
+
+.txtbola{
+    text-align: center;
+}
+
+.txtbola h2{
+    font-size: 40px;
+    margin-top: 15px;
+    color: #000000;
+}
+
+.txtbola h4{
+    margin-top: 10px;   
+    font-size: 24px;
+    color: #C197D2;
+    font-family: retro;
+}
+

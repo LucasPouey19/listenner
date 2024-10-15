@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../outras pessoas"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "outras pessoas"
+	}
+}
